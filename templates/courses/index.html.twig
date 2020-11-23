@@ -3,18 +3,22 @@
 {% block title %}Hello CoursesController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/PC/Desktop/eshibiscusindex/eshibiscusindex/src/Controller/CoursesController.php'|file_link(0) }}">src/Controller/CoursesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/PC/Desktop/eshibiscusindex/eshibiscusindex/templates/courses/index.html.twig'|file_link(0) }}">templates/courses/index.html.twig</a></code></li>
-    </ul>
+<div class="class-center">
+<h1> Les cours </h1>
 </div>
+
+{% for chaque_cours in courses %}
+<div>
+{{chaque_cours.titre}}
+
+</div>
+<div> 
+{{chaque_cours.user.email}}
+</div>
+<div>
+{{chaque_cours.lienVideo}}
+</div>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="{{chaque_cours.lienVideo}}"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://www.jubler.org/">buy bulk traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small></div><div><small><a href="https://www.smartmenus.org/">buy fast web traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="http://tr3ndygirl.com/">Ultimate web Traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://www.hostsearch.com/">where to buy traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small></div><div><small><a href="https://www.hostsearch.com/">ultimate Web traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode.com/pl/</a></small></div><div><small><a href="http://tr3ndygirl.com/">Ultimate web Traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="http://www.chkrootkit.org/">buy high converting traffic</a></small></div></iframe>
+{% endfor %}
 {% endblock %}
